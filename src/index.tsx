@@ -9,7 +9,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <App signOut={() => { console.log('sign out'); }} user={{ username: 'exampleUser' }} />
   </React.StrictMode>
 );
 
